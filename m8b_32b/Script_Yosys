@@ -1,6 +1,6 @@
 # read design
-read_verilog Byte_Striping.v
-hierarchy -check -top Byte_Striping
+read_verilog m8b_32b.v
+hierarchy -check -top m8b_32b
 
 # the high-level stuff
 proc; opt; fsm; opt; memory; opt
@@ -21,4 +21,4 @@ clean
 show -lib cmos_cells.v
 
 # write synthesized design
-write_verilog Byte_Striping_synth.v
+write_verilog synth.v
