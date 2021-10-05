@@ -1,0 +1,34 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Oct  5 14:26:55 2021
+[*]
+[dumpfile] "/home/caro/Proyecto_digitales/proyecto_dig_I/Byte-Striping/Byte_Striping.vcd"
+[dumpfile_mtime] "Tue Oct  5 14:24:20 2021"
+[dumpfile_size] 43656
+[savefile] "/home/caro/Proyecto_digitales/proyecto_dig_I/Byte-Striping/config.gtkw"
+[timestart] 0
+[size] 1366 704
+[pos] -101 -101
+*-13.247538 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 180
+@28
+BancoPruebas.clk_2f
+@22
+BancoPruebas.data_in[31:0]
+@28
+BancoPruebas.valid_in
+@22
+BancoPruebas.lane0[31:0]
+@28
+BancoPruebas.valid_0
+@22
+BancoPruebas.lane1[31:0]
+@28
+BancoPruebas.valid_1
+@29
+BancoPruebas.selector
+[pattern_trace] 1
+[pattern_trace] 0

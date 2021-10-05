@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Oct  5 14:29:37 2021
+[*]
+[dumpfile] "/home/caro/Proyecto_digitales/proyecto_dig_I/m8b_32b/P1.vcd"
+[dumpfile_mtime] "Tue Oct  5 14:28:42 2021"
+[dumpfile_size] 48973
+[savefile] "/home/caro/Proyecto_digitales/proyecto_dig_I/m8b_32b/config.gtkw"
+[timestart] 0
+[size] 1366 704
+[pos] -51 -1
+*-45.042942 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 142
+[sst_expanded] 1
+[sst_vpaned_height] 180
+@28
+Banco_pruebas.clk_4f
+Banco_pruebas.clk_f
+@22
+Banco_pruebas.data_in[7:0]
+@28
+Banco_pruebas.valid_in
+@22
+Banco_pruebas.data_out[31:0]
+@28
+Banco_pruebas.valid_out
+@29
+Banco_pruebas.reset_L
+[pattern_trace] 1
+[pattern_trace] 0
