@@ -10,7 +10,7 @@ dependencia1:
 	$(CC1) -o BancoPrueba BancoPrueba.v
 	$(CC1) -o Probador Probador.v
 	vvp BancoPrueba
-	$(CC2) Byte_Striping.vcd config.gtkw
+	$(CC2) Byte_Striping.vcd config_Bytestriping.gtkw
 
 
 

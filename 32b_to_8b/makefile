@@ -10,4 +10,4 @@ dependencia1:
 	$(CC1) -o BancoPrueba BancoPrueba.v
 	$(CC1) -o Probador Probador.v
 	vvp BancoPrueba
-	$(CC2) conv_32b_to_8b.vcd
+	$(CC2) conv_32b_to_8b.vcd config_32b_8b.gtkw
