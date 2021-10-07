@@ -1,4 +1,3 @@
-#Makefile
 CC1=iverilog
 CC2=gtkwave
 CC3=yosys
@@ -11,7 +10,7 @@ dependencia1:
 	$(CC1) -o banco_pruebas_un_byte_striping banco_pruebas_un_byte_striping.v
 	$(CC1) -o probador_un_byte_striping probador_un_byte_striping.v
 	vvp banco_pruebas_un_byte_striping
-	$(CC2) test.vcd config_Bytestriping.gtkw
+	$(CC2) test.vcd config_ByteUnstriping.gtkw
 
 
 
