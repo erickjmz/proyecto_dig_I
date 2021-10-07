@@ -22,105 +22,89 @@ module Probador(
 			valid_in = 'b0;
 			#3 reset_L = 'b1 ;
 			#2 valid_in = 'b1;
+
+			@(posedge clk_4f);
+        	data_in <= 'hFF;
+        	valid_in <= 1;
+
+         	@(posedge clk_4f);
+        	data_in <= 'hFF;
+        	valid_in <= 1;
+
+		 	@(posedge clk_4f);
+        	data_in <= 'hFF;
+        	valid_in <= 1;
+
+			@(posedge clk_4f);
+        	data_in <= 'hFF;
+        	valid_in <= 1;
+
+			@(posedge clk_4f);
+        	data_in <= 'hDD;
+        	valid_in <= 1;
+
+         	@(posedge clk_4f);
+        	data_in <= 'hDD;
+        	valid_in <= 1;
+
+		 	@(posedge clk_4f);
+        	data_in <= 'hDD;
+        	valid_in <= 1;
+
+		 	@(posedge clk_4f);
+        	data_in <= 'hDD;
+        	valid_in <= 1;
 	
 			@(posedge clk_4f);
         	data_in <= 'hAA;
-        	valid_in <= 1;
+        	valid_in <= 0;
 
          	@(posedge clk_4f);
         	data_in <= 'hAA;
-        	valid_in <= 1;
+        	valid_in <= 0;
 
 		 	@(posedge clk_4f);
         	data_in <= 'hAA;
-        	valid_in <= 1;
+        	valid_in <= 0;
 
 		 	@(posedge clk_4f);
         	data_in <= 'hAA;
-        	valid_in <= 1;
+        	valid_in <= 0;
 
 			@(posedge clk_4f);
-        	data_in <= 'hBB;
+        	data_in <= 'h00;
         	valid_in <= 1;
 
          	@(posedge clk_4f);
-        	data_in <= 'hBB;
+        	data_in <= 'h00;
         	valid_in <= 1;
 
 		 	@(posedge clk_4f);
-        	data_in <= 'hBB;
+        	data_in <= 'h00;
         	valid_in <= 1;
 
 		 	@(posedge clk_4f);
-        	data_in <= 'hBB;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'hCC;
-        	valid_in <= 1;
-
-         	@(posedge clk_4f);
-        	data_in <= 'hCC;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'hCC;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'hCC;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'hDD;
-        	valid_in <= 1;
-
-         	@(posedge clk_4f);
-        	data_in <= 'hDD;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'hDD;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'hDD;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'hEE;
-        	valid_in <= 1;
-
-         	@(posedge clk_4f);
-        	data_in <= 'hEE;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'hEE;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'hEE;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'hFF;
-        	valid_in <= 1;
-
-         	@(posedge clk_4f);
-        	data_in <= 'hFF;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'hFF;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'hFF;
+        	data_in <= 'h03;
         	valid_in <= 1;
 		
         	@(posedge clk_4f);
         	data_in <= 'hAA;
+        	valid_in <= 0;
+
+         	@(posedge clk_4f);
+        	data_in <= 'hBB;
+        	valid_in <= 0;
+
+		 	@(posedge clk_4f);
+        	data_in <= 'hCC;
+        	valid_in <= 0;
+
+			@(posedge clk_4f);
+        	data_in <= 'hDD;
+        	valid_in <= 0;
+
+			@(posedge clk_4f);
+        	data_in <= 'hAA;
         	valid_in <= 1;
 
          	@(posedge clk_4f);
@@ -133,22 +117,6 @@ module Probador(
 
 			@(posedge clk_4f);
         	data_in <= 'hDD;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'hEE;
-        	valid_in <= 1;
-
-         	@(posedge clk_4f);
-        	data_in <= 'hFF;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'h00;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'h00;
         	valid_in <= 1;
 
 			@(posedge clk_4f);
@@ -173,22 +141,6 @@ module Probador(
 
          	@(posedge clk_4f);
         	data_in <= 'h06;
-        	valid_in <= 1;
-
-		 	@(posedge clk_4f);
-        	data_in <= 'h07;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'h08;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'h09;
-        	valid_in <= 1;
-
-			@(posedge clk_4f);
-        	data_in <= 'h10;
         	valid_in <= 1;
 
 		$finish;

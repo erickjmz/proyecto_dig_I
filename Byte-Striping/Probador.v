@@ -44,23 +44,13 @@ module Probador(
 			selector <= 1;
 
 			@(posedge clk_2f);
-			valid_in <= 1;
+			valid_in <= 0;
 			data_in <= 32'hBBBBBBBB;
 			selector <= 0;
 
         	@(posedge clk_2f);
-			valid_in <= 1;
+			valid_in <= 0;
 			data_in <= 32'hAAAAAAAA;
-			selector <= 1;
-
-			@(posedge clk_2f);
-			valid_in <= 1;
-			data_in <= 32'h00000001;
-			selector <= 0;
-
-			@(posedge clk_2f);
-			valid_in <= 1;
-			data_in <= 32'h00000002;
 			selector <= 1;
 
 			@(posedge clk_2f);
@@ -74,9 +64,54 @@ module Probador(
 			selector <= 1;
 
 			@(posedge clk_2f);
-			valid_in <= 1;
+			valid_in <= 0;
 			data_in <= 32'h00000005;
 			selector <= 0;
+
+			@(posedge clk_2f);
+			valid_in <= 0;
+			data_in <= 32'h00000006;
+			selector <= 1;
+
+			@(posedge clk_2f);
+			valid_in <= 1;
+			data_in <= 32'hAAAAAAAA;
+			selector <= 0;
+
+			@(posedge clk_2f);
+			valid_in <= 1;
+			data_in <= 32'h99999999;
+			selector <= 1;
+
+			@(posedge clk_2f);
+			valid_in <= 0;
+			data_in <= 32'hBBBBBBBB;
+			selector <= 0;
+
+			@(posedge clk_2f);
+			valid_in <= 0;
+			data_in <= 32'h88888888;
+			selector <= 1;
+
+			@(posedge clk_2f);
+			valid_in <= 1;
+			data_in <= 32'h00000007;
+			selector <= 0;
+
+			@(posedge clk_2f);
+			valid_in <= 1;
+			data_in <= 32'h00000008;
+			selector <= 1;
+
+			@(posedge clk_2f);
+			valid_in <= 0;
+			data_in <= 32'h00000009;
+			selector <= 0;
+
+			@(posedge clk_2f);
+			valid_in <= 0;
+			data_in <= 32'h00000001;
+			selector <= 1;
 
 			@(posedge clk_2f);	
 			valid_in <= 1;
