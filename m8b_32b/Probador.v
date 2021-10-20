@@ -20,8 +20,9 @@ module Probador(
 			data_in = 'b0;
 			reset_L = 'b0 ;
 			valid_in = 'b0;
-			#3 reset_L = 'b1 ;
-			#2 valid_in = 'b1;
+			#2 reset_L = 'b1;
+			valid_in <= 'b1;
+
 
 			@(posedge clk_4f);
         	data_in <= 'hFF;
@@ -148,11 +149,11 @@ module Probador(
 	end
 	
 	// Reloj
-	initial	clk_4f	<= 0;			
+	initial	clk_4f	<= 1;			
 	always  #2 		clk_4f 	<= ~clk_4f;	
 
 	// Reloj
-	initial	clk_f	<= 0;			
-	always  #7 	clk_f <= ~clk_f;
+	initial	clk_f	<= 1;			
+	always  #8 	clk_f <= ~clk_f;
 	
 endmodule

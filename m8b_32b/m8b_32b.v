@@ -9,10 +9,6 @@ module m8b_32b (
 	);
 	
 	reg [1:0] selector;
-
-	always @ (posedge clk_4f) begin   
-		valid_out <= valid_in;
-	end
 	
 	always @ (posedge clk_4f) begin          
 	
@@ -43,7 +39,11 @@ module m8b_32b (
 			data_out[31:24] <= data_in;
 			selector <= 01;
 			valid_out <= valid_in;
-		end			
+		end	
+
+		else if ((valid_in == 0) & (reset_L == 1)) begin
+			valid_out <= valid_in;
+		end	
 
 	end
 	
