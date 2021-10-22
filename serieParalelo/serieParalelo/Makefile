@@ -1,0 +1,9 @@
+objetivo1: dependencia1 dependencia2
+	iverilog banco_prueba_serie_paralelo.v -o banco_pruebas_serial_paralelo
+dependencia1:
+	iverilog serial_paralelo.v -o serial_paralelo
+dependencia2:
+	iverilog banco_prueba_serie_paralelo.v -o probador_serial_paralelo
+
+
+
