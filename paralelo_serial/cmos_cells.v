@@ -41,3 +41,4 @@ always @(posedge C, posedge S, posedge R)
 	else
 		Q <= D;
 endmodule
+
