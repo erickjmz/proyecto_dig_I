@@ -1,6 +1,7 @@
 
 `timescale 1ns / 100ps
 
+`include "cmos_cells.v"
 `include "serial_paralelo.v"
 `include "probador_serie_paralelo.v"
 `include "estructural.v"
