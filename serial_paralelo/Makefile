@@ -8,8 +8,8 @@ OBjetivo1: dependencia1
 dependencia1:
 	$(CC3) -s yosys.s
 	sed -i 's/serial_paralelo/estructural/g'  estructural.v
-	$(CC1) -o Banco_pruebas banco_prueba_serie_paralelo.v
-	$(CC1) -o Probador probador_serie_paralelo.v
+	$(CC1) -o Banco_pruebas banco_prueba.v
+	$(CC1) -o Probador probador.v
 	vvp Banco_pruebas
 	$(CC2) test.vcd 
 	
