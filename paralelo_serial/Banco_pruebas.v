@@ -4,6 +4,8 @@
 // Pueden omitirse y llamarse desde el testbench
 `include "paralelo_serial.v"
 `include "Probador.v"
+`include "synth.v"
+`include "cmos_cells.v"
 
 
 module Banco_pruebas; // Testbench
@@ -24,6 +26,15 @@ paralelo_serial paralelo_serial_conductual( /*AUTOINST*/
 				  .valid_in		(valid_in),
 				  .reset_L		(reset_L));
 
+synth paralelo_serial_estrcutural( /*AUTOINST*/
+						// Outputs
+						.data_out		(data_out),
+						// Inputs
+						.clk_4f		(clk_4f),
+						.clk_32f			(clk_32f),
+						.data_in		(data_in[7:0]),
+						.reset_L		(reset_L),
+						.valid_in		(valid_in));
 
 	// Probador: generador de señales y monitor
 Probador probador( /*AUTOINST*/

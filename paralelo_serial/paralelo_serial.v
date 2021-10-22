@@ -9,10 +9,11 @@ module paralelo_serial(
 	reg [2:0] selector = 'b000;
 	reg [7:0] tmp_out;
 
-always @ (posedge clk_32f or posedge reset_L) begin
+always @ (posedge clk_32f or negedge reset_L) begin
 		tmp_out <= data_in;
 		if (reset_L == 0) begin
 			data_out <= 0;
+			selector <= 'b000;
 		end
 		else	begin
 			if (valid_in == 0) begin
