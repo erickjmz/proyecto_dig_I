@@ -4,15 +4,15 @@ module probador(
 			       output reg  clk_4f,
                 output reg  valid_out,
                 input 	   active_input, active_inputE,
-			       input [7:0] data_out, data_outE,
-			       input [2:0]	   BC_counter, BC_counterE
+			       input [7:0] data_output, data_outputE,
+			       input [2:0]	   BC_contador, BC_contadorE
           );
 initial begin
 
      $dumpfile("test.vcd");
      $dumpvars;
      $display("\t\t\tclk_32f, \tclk_4f, \tdata_in, \tselect, \tdata_out0, \tvalid");
-     $monitor($time, "\t%b\t%b\t%b\t%b\t%b",clk_32f, clk_4f, data_input,  data_out, valid_out );
+     $monitor($time, "\t%b\t%b\t%b\t%b\t%b",clk_32f, clk_4f, data_input,  data_output, valid_out );
 
     valid_out <= 0;
     

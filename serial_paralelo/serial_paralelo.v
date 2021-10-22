@@ -1,5 +1,5 @@
    module serial_paralelo(
-			 input 		  data_intput,
+			 input 		  data_input,
           input 		  valid_out,
           input 		  clk_32f,
 			 input 		  clk_4f,
@@ -12,28 +12,28 @@
      
 always @(posedge clk_32f) begin
       if (contador == 0)begin
-   bus_0[0] <= data_intput;
+   bus_0[0] <= data_input;
       end
    else if (contador == 1) begin
-   bus_0[1] <= data_intput;
+   bus_0[1] <= data_input;
    end
     else if (contador == 2) begin
-   bus_0[2] <= data_intput;
+   bus_0[2] <= data_input;
     end
     else if (contador == 3) begin
-   bus_0[3] <= data_intput;
+   bus_0[3] <= data_input;
     end
     else if (contador == 4) begin
-   bus_0[4] <= data_intput; //primeros 8bits
+   bus_0[4] <= data_input; //primeros 8bits
     end
     else if (contador == 5) begin
-   bus_0[5] <= data_intput;
+   bus_0[5] <= data_input;
     end
     else if (contador == 6) begin
-   bus_0[6] <= data_intput;
+   bus_0[6] <= data_input;
     end
     else if (contador == 7) begin
-   bus_0[7] <= data_intput;
+   bus_0[7] <= data_input;
     end else begin
        BC_contador <= 0;   
        

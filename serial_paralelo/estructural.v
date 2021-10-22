@@ -2,10 +2,10 @@
 
 (* top =  1  *)
 (* src = "estructural.v:1" *)
-module estructural(data_in, data_out, clk_32f, clk_4f, active, valid_out, BC_counter);
-  (* src = "estructural.v:52" *)
+module estructural(data_input, valid_out, clk_32f, clk_4f, active_output, data_output, BC_contador);
+  (* src = "estructural.v:43" *)
   wire _00_;
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   wire [2:0] _01_;
   wire _02_;
   wire _03_;
@@ -45,82 +45,82 @@ module estructural(data_in, data_out, clk_32f, clk_4f, active, valid_out, BC_cou
   wire _37_;
   wire _38_;
   (* src = "estructural.v:8" *)
-  output [2:0] BC_counter;
+  output [2:0] BC_contador;
   (* src = "estructural.v:6" *)
-  output active;
-  (* src = "estructural.v:11" *)
-  wire [0:7] bus0;
+  output active_output;
+  (* src = "estructural.v:10" *)
+  wire [0:7] bus_0;
   (* src = "estructural.v:4" *)
   input clk_32f;
   (* src = "estructural.v:5" *)
   input clk_4f;
-  (* src = "estructural.v:13" *)
-  wire [2:0] counter;
+  (* src = "estructural.v:11" *)
+  wire [2:0] contador;
   (* src = "estructural.v:2" *)
-  input data_in;
-  (* src = "estructural.v:3" *)
-  output [7:0] data_out;
+  input data_input;
   (* src = "estructural.v:7" *)
+  output [7:0] data_output;
+  (* src = "estructural.v:3" *)
   input valid_out;
   NOT _39_ (
-    .A(data_out[6]),
+    .A(data_output[6]),
     .Y(_02_)
   );
   NOT _40_ (
-    .A(BC_counter[0]),
+    .A(BC_contador[0]),
     .Y(_03_)
   );
   NOT _41_ (
-    .A(BC_counter[1]),
+    .A(BC_contador[1]),
     .Y(_04_)
   );
   NOT _42_ (
-    .A(BC_counter[2]),
+    .A(BC_contador[2]),
     .Y(_05_)
   );
   NOT _43_ (
-    .A(data_out[0]),
+    .A(data_output[0]),
     .Y(_06_)
   );
   NOT _44_ (
-    .A(data_out[1]),
+    .A(data_output[1]),
     .Y(_07_)
   );
   NOT _45_ (
-    .A(data_out[3]),
+    .A(data_output[3]),
     .Y(_08_)
   );
   NOT _46_ (
-    .A(data_out[4]),
+    .A(data_output[4]),
     .Y(_09_)
   );
   NOT _47_ (
-    .A(data_out[7]),
+    .A(data_output[7]),
     .Y(_10_)
   );
   NAND _48_ (
     .A(_04_),
-    .B(BC_counter[2]),
+    .B(BC_contador[2]),
     .Y(_11_)
   );
   NOR _49_ (
-    .A(data_out[1]),
+    .A(data_output[1]),
     .B(_08_),
     .Y(_12_)
   );
   NAND _50_ (
     .A(_07_),
-    .B(data_out[3]),
+    .B(data_output[3]),
     .Y(_13_)
   );
   NOR _51_ (
-    .A(data_out[6]),
+    .A(data_output[6]),
     .B(_09_),
     .Y(_14_)
   );
   NAND _52_ (
     .A(_02_),
-    .B(data_out[4]),
+    .B(data_output[4]),
     .Y(_15_)
   );
   NOR _53_ (
@@ -134,18 +134,18 @@ module estructural(data_in, data_out, clk_32f, clk_4f, active, valid_out, BC_cou
     .Y(_17_)
   );
   NOR _55_ (
-    .A(data_out[0]),
+    .A(data_output[0]),
     .B(_10_),
     .Y(_18_)
   );
   NAND _56_ (
     .A(_06_),
-    .B(data_out[7]),
+    .B(data_output[7]),
     .Y(_19_)
   );
   NAND _57_ (
-    .A(data_out[2]),
-    .B(data_out[5]),
+    .A(data_output[2]),
+    .B(data_output[5]),
     .Y(_20_)
   );
   NOT _58_ (
@@ -188,7 +188,7 @@ module estructural(data_in, data_out, clk_32f, clk_4f, active, valid_out, BC_cou
     .Y(_28_)
   );
   NAND _66_ (
-    .A(BC_counter[0]),
+    .A(BC_contador[0]),
     .B(_24_),
     .Y(_29_)
   );
@@ -212,7 +212,7 @@ module estructural(data_in, data_out, clk_32f, clk_4f, active, valid_out, BC_cou
     .Y(_32_)
   );
   NAND _71_ (
-    .A(BC_counter[1]),
+    .A(BC_contador[1]),
     .B(_28_),
     .Y(_33_)
   );
@@ -231,7 +231,7 @@ module estructural(data_in, data_out, clk_32f, clk_4f, active, valid_out, BC_cou
     .Y(_35_)
   );
   NOR _75_ (
-    .A(BC_counter[2]),
+    .A(BC_contador[2]),
     .B(_33_),
     .Y(_36_)
   );
@@ -254,83 +254,83 @@ module estructural(data_in, data_out, clk_32f, clk_4f, active, valid_out, BC_cou
     .B(_38_),
     .Y(_00_)
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _80_ (
     .C(clk_4f),
     .D(_01_[0]),
-    .Q(BC_counter[0])
+    .Q(BC_contador[0])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _81_ (
     .C(clk_4f),
     .D(_01_[1]),
-    .Q(BC_counter[1])
+    .Q(BC_contador[1])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _82_ (
     .C(clk_4f),
     .D(_01_[2]),
-    .Q(BC_counter[2])
+    .Q(BC_contador[2])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _83_ (
     .C(clk_4f),
     .D(_00_),
-    .Q(active)
+    .Q(active_output)
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _84_ (
     .C(clk_4f),
-    .D(bus0[7]),
-    .Q(data_out[0])
+    .D(bus_0[7]),
+    .Q(data_output[0])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _85_ (
     .C(clk_4f),
-    .D(bus0[6]),
-    .Q(data_out[1])
+    .D(bus_0[6]),
+    .Q(data_output[1])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _86_ (
     .C(clk_4f),
-    .D(bus0[5]),
-    .Q(data_out[2])
+    .D(bus_0[5]),
+    .Q(data_output[2])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _87_ (
     .C(clk_4f),
-    .D(bus0[4]),
-    .Q(data_out[3])
+    .D(bus_0[4]),
+    .Q(data_output[3])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _88_ (
     .C(clk_4f),
-    .D(bus0[3]),
-    .Q(data_out[4])
+    .D(bus_0[3]),
+    .Q(data_output[4])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _89_ (
     .C(clk_4f),
-    .D(bus0[2]),
-    .Q(data_out[5])
+    .D(bus_0[2]),
+    .Q(data_output[5])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _90_ (
     .C(clk_4f),
-    .D(bus0[1]),
-    .Q(data_out[6])
+    .D(bus_0[1]),
+    .Q(data_output[6])
   );
-  (* src = "estructural.v:52" *)
+  (* src = "estructural.v:43" *)
   DFF _91_ (
     .C(clk_4f),
-    .D(bus0[0]),
-    .Q(data_out[7])
+    .D(bus_0[0]),
+    .Q(data_output[7])
   );
-  (* src = "estructural.v:22" *)
+  (* src = "estructural.v:13" *)
   DFF _92_ (
     .C(clk_32f),
-    .D(data_in),
-    .Q(bus0[0])
+    .D(data_input),
+    .Q(bus_0[0])
   );
-  assign counter = 3'h0;
+  assign contador = 3'h0;
 endmodule
