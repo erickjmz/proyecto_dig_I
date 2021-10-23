@@ -1,0 +1,679 @@
+$date
+	Fri Oct 22 21:24:51 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module BancoPruebas $end
+$var wire 3 ! counter_1 [2:0] $end
+$var wire 3 " counter_2 [2:0] $end
+$var wire 1 # valid_out $end
+$var wire 32 $ salida [31:0] $end
+$var wire 1 % reset_L $end
+$var wire 1 & input_2 $end
+$var wire 1 ' input_1 $end
+$var wire 1 ( clk_f $end
+$var wire 1 ) clk_4f $end
+$var wire 1 * clk_32f $end
+$var wire 1 + clk_2f $end
+$scope module phy_rx_conductual $end
+$var wire 1 , valid_out_par_0 $end
+$var wire 1 - valid_out_par_1 $end
+$var wire 1 . valid_par_1 $end
+$var wire 1 / valid_par_0 $end
+$var wire 1 # valid_out $end
+$var wire 1 0 valid_32b_1 $end
+$var wire 1 1 valid_32b_0 $end
+$var wire 32 2 salida [31:0] $end
+$var wire 1 % reset_L $end
+$var wire 8 3 out_8b_1 [7:0] $end
+$var wire 8 4 out_8b_0 [7:0] $end
+$var wire 32 5 lane_1 [31:0] $end
+$var wire 32 6 lane_0 [31:0] $end
+$var wire 1 & input_1 $end
+$var wire 1 ' input_0 $end
+$var wire 1 ( clk_f $end
+$var wire 1 ) clk_4f $end
+$var wire 1 * clk_32f $end
+$var wire 1 + clk_2f $end
+$var wire 3 7 BC_counter_2 [2:0] $end
+$var wire 3 8 BC_counter_1 [2:0] $end
+$scope module byte_unstriping $end
+$var wire 1 0 valid_1 $end
+$var wire 1 1 valid_0 $end
+$var wire 1 % reset_L $end
+$var wire 32 9 lane1 [31:0] $end
+$var wire 32 : lane0 [31:0] $end
+$var wire 1 ( clk_f $end
+$var wire 1 + clk_2f $end
+$var reg 32 ; data_out [31:0] $end
+$var reg 1 < selector $end
+$var reg 1 # valid_out $end
+$upscope $end
+$scope module conv_8b_to_32b_0 $end
+$var wire 1 / valid_in $end
+$var wire 1 % reset_L $end
+$var wire 8 = data_in [7:0] $end
+$var wire 1 ( clk_f $end
+$var wire 1 ) clk_4f $end
+$var reg 32 > data_out [31:0] $end
+$var reg 2 ? selector [1:0] $end
+$var reg 1 1 valid_out $end
+$upscope $end
+$scope module conv_8b_to_32b_1 $end
+$var wire 1 . valid_in $end
+$var wire 1 % reset_L $end
+$var wire 8 @ data_in [7:0] $end
+$var wire 1 ( clk_f $end
+$var wire 1 ) clk_4f $end
+$var reg 32 A data_out [31:0] $end
+$var reg 2 B selector [1:0] $end
+$var reg 1 0 valid_out $end
+$upscope $end
+$scope module serial_paralelo_0 $end
+$var wire 1 , valid_out $end
+$var wire 1 ' data_input $end
+$var wire 1 ) clk_4f $end
+$var wire 1 * clk_32f $end
+$var reg 3 C BC_contador [2:0] $end
+$var reg 1 / active_output $end
+$var reg 8 D bus_0 [0:7] $end
+$var reg 3 E contador [2:0] $end
+$var reg 8 F data_output [7:0] $end
+$upscope $end
+$scope module serial_paralelo_1 $end
+$var wire 1 - valid_out $end
+$var wire 1 & data_input $end
+$var wire 1 ) clk_4f $end
+$var wire 1 * clk_32f $end
+$var reg 3 G BC_contador [2:0] $end
+$var reg 1 . active_output $end
+$var reg 8 H bus_0 [0:7] $end
+$var reg 3 I contador [2:0] $end
+$var reg 8 J data_output [7:0] $end
+$upscope $end
+$upscope $end
+$scope module probador $end
+$var wire 3 K BC_counter_1 [2:0] $end
+$var wire 3 L BC_counter_2 [2:0] $end
+$var wire 32 M salida [31:0] $end
+$var wire 1 # valid_out $end
+$var reg 1 + clk_2f $end
+$var reg 1 * clk_32f $end
+$var reg 1 ) clk_4f $end
+$var reg 1 ( clk_f $end
+$var reg 1 ' input_0 $end
+$var reg 1 & input_1 $end
+$var reg 1 % reset_L $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx M
+bz L
+bz K
+bx J
+bx I
+bx H
+b0 G
+bx F
+bx E
+bx D
+b0 C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+x<
+bx ;
+bx :
+bx 9
+b0 8
+b0 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+x1
+x0
+x/
+x.
+z-
+z,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+bx $
+x#
+bz "
+bz !
+$end
+#30
+1*
+#60
+0*
+#90
+1*
+#120
+0*
+#150
+1*
+#180
+0*
+#210
+1*
+#240
+b11 ?
+b0 6
+b0 :
+b0 >
+b11 B
+b0 5
+b0 9
+b0 A
+0/
+b0 E
+0.
+b0 I
+0*
+1)
+#270
+b0xxxxxxx D
+b0xxxxxxx H
+b1 E
+b1 I
+1*
+#300
+0*
+#330
+b0xxxxxx H
+b0xxxxxx D
+b10 I
+b10 E
+1*
+#360
+0*
+#390
+b0xxxxx D
+b0xxxxx H
+b11 E
+b11 I
+1*
+#420
+0*
+#450
+b0xxxx H
+b0xxxx D
+b100 I
+b100 E
+1*
+#480
+b0 $
+b0 2
+b0 ;
+b0 M
+0<
+x#
+0*
+0)
+1+
+#510
+b0xxx D
+b0xxx H
+b101 E
+b101 I
+1*
+#540
+0*
+#570
+b0xx H
+b0xx D
+b110 I
+b110 E
+1*
+#600
+0*
+#630
+b0x D
+b0x H
+b111 E
+b111 I
+1*
+#660
+0*
+#690
+b0 H
+b0 D
+b0 I
+b0 E
+1*
+#720
+b0 3
+b0 @
+b0 J
+b0 4
+b0 =
+b0 F
+0*
+1)
+#750
+b1 E
+b1 I
+1*
+#780
+0*
+#810
+b10 I
+b10 E
+1*
+#840
+0*
+#870
+b11 E
+b11 I
+1*
+#900
+0*
+#930
+b100 I
+b100 E
+1*
+#960
+1%
+0*
+0)
+0+
+1(
+#990
+1&
+1'
+b101 E
+b101 I
+1*
+#1020
+0*
+#1050
+0&
+0'
+b100 H
+b100 D
+b110 I
+b110 E
+1*
+#1080
+0*
+#1110
+1&
+1'
+b111 E
+b111 I
+1*
+#1140
+0*
+#1170
+b101 H
+b101 D
+b0 I
+b0 E
+1*
+#1200
+01
+00
+b101 4
+b101 =
+b101 F
+b101 3
+b101 @
+b101 J
+0*
+1)
+#1230
+b10000101 D
+b10000101 H
+b1 E
+b1 I
+1*
+#1260
+0*
+#1290
+b11000101 H
+b11000101 D
+b10 I
+b10 E
+1*
+#1320
+0*
+#1350
+b11100101 D
+b11100101 H
+0&
+0'
+b11 E
+b11 I
+1*
+#1380
+0*
+#1410
+b100 I
+b100 E
+1*
+#1440
+0#
+1<
+0*
+0)
+1+
+#1470
+1&
+1'
+b101 E
+b101 I
+1*
+#1500
+0*
+#1530
+0&
+0'
+b110 I
+b110 E
+1*
+#1560
+0*
+#1590
+1&
+1'
+b111 E
+b111 I
+1*
+#1620
+0*
+#1650
+b0 I
+b0 E
+1*
+#1680
+b11100101 3
+b11100101 @
+b11100101 J
+b11100101 4
+b11100101 =
+b11100101 F
+0*
+1)
+#1710
+b1 E
+b1 I
+1*
+#1740
+0*
+#1770
+b10 I
+b10 E
+1*
+#1800
+0*
+#1830
+0&
+0'
+b11 E
+b11 I
+1*
+#1860
+0*
+#1890
+b100 I
+b100 E
+1*
+#1920
+0*
+0)
+0+
+0(
+#1950
+1&
+1'
+b101 E
+b101 I
+1*
+#1980
+0*
+#2010
+0&
+0'
+b110 I
+b110 E
+1*
+#2040
+0*
+#2070
+1&
+1'
+b111 E
+b111 I
+1*
+#2100
+0*
+#2130
+b0 I
+b0 E
+1*
+#2160
+0*
+1)
+#2190
+b1 E
+b1 I
+1*
+#2220
+0*
+#2250
+b10 I
+b10 E
+1*
+#2280
+0*
+#2310
+0&
+0'
+b11 E
+b11 I
+1*
+#2340
+0*
+#2370
+b100 I
+b100 E
+1*
+#2400
+0#
+0<
+0*
+0)
+1+
+#2430
+1&
+1'
+b101 E
+b101 I
+1*
+#2460
+0*
+#2490
+0&
+0'
+b110 I
+b110 E
+1*
+#2520
+0*
+#2550
+1&
+1'
+b111 E
+b111 I
+1*
+#2580
+0*
+#2610
+b0 I
+b0 E
+1*
+#2640
+0*
+1)
+#2670
+b1 E
+b1 I
+1*
+#2700
+0*
+#2730
+b10 I
+b10 E
+1*
+#2760
+0*
+#2790
+0&
+0'
+b11 E
+b11 I
+1*
+#2820
+0*
+#2850
+b100 I
+b100 E
+1*
+#2880
+0*
+0)
+0+
+1(
+#2910
+1&
+1'
+b101 E
+b101 I
+1*
+#2940
+0*
+#2970
+0&
+0'
+b110 I
+b110 E
+1*
+#3000
+0*
+#3030
+1&
+1'
+b111 E
+b111 I
+1*
+#3060
+0*
+#3090
+b0 I
+b0 E
+1*
+#3120
+0*
+1)
+#3150
+b1 E
+b1 I
+1*
+#3180
+0*
+#3210
+b10 I
+b10 E
+1*
+#3240
+0*
+#3270
+0&
+0'
+b11 E
+b11 I
+1*
+#3300
+0*
+#3330
+b100 I
+b100 E
+1*
+#3360
+0#
+1<
+0*
+0)
+1+
+#3390
+1&
+1'
+b101 E
+b101 I
+1*
+#3420
+0*
+#3450
+0&
+0'
+b110 I
+b110 E
+1*
+#3480
+0*
+#3510
+1&
+1'
+b111 E
+b111 I
+1*
+#3540
+0*
+#3570
+b0 I
+b0 E
+1*
+#3600
+0*
+1)
+#3630
+b1 E
+b1 I
+1*
+#3660
+0*
+#3690
+b10 I
+b10 E
+1*
+#3720
+0*
+#3750
+0&
+0'
+b11 E
+b11 I
+1*
+#3780
+0*
+#3810
+b100 I
+b100 E
+1*
