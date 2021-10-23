@@ -10,6 +10,10 @@
     reg [0:7]				  bus_0;
     reg [2:0]  			  contador;
      
+always@(valid_out)begin
+   BC_contador <= 0;
+   end
+
 always @(posedge clk_32f) begin
       if (contador == 0)begin
    bus_0[0] <= data_input;

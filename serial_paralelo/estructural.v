@@ -3,47 +3,6 @@
 (* top =  1  *)
 (* src = "estructural.v:1" *)
 module estructural(data_input, valid_out, clk_32f, clk_4f, active_output, data_output, BC_contador);
-  (* src = "estructural.v:43" *)
-  wire _00_;
-  (* src = "estructural.v:43" *)
-  wire [2:0] _01_;
-  wire _02_;
-  wire _03_;
-  wire _04_;
-  wire _05_;
-  wire _06_;
-  wire _07_;
-  wire _08_;
-  wire _09_;
-  wire _10_;
-  wire _11_;
-  wire _12_;
-  wire _13_;
-  wire _14_;
-  wire _15_;
-  wire _16_;
-  wire _17_;
-  wire _18_;
-  wire _19_;
-  wire _20_;
-  wire _21_;
-  wire _22_;
-  wire _23_;
-  wire _24_;
-  wire _25_;
-  wire _26_;
-  wire _27_;
-  wire _28_;
-  wire _29_;
-  wire _30_;
-  wire _31_;
-  wire _32_;
-  wire _33_;
-  wire _34_;
-  wire _35_;
-  wire _36_;
-  wire _37_;
-  wire _38_;
   (* src = "estructural.v:8" *)
   output [2:0] BC_contador;
   (* src = "estructural.v:6" *)
@@ -62,275 +21,61 @@ module estructural(data_input, valid_out, clk_32f, clk_4f, active_output, data_o
   output [7:0] data_output;
   (* src = "estructural.v:3" *)
   input valid_out;
-  NOT _39_ (
-    .A(data_output[6]),
-    .Y(_02_)
-  );
-  NOT _40_ (
-    .A(BC_contador[0]),
-    .Y(_03_)
-  );
-  NOT _41_ (
-    .A(BC_contador[1]),
-    .Y(_04_)
-  );
-  NOT _42_ (
-    .A(BC_contador[2]),
-    .Y(_05_)
-  );
-  NOT _43_ (
-    .A(data_output[0]),
-    .Y(_06_)
-  );
-  NOT _44_ (
-    .A(data_output[1]),
-    .Y(_07_)
-  );
-  NOT _45_ (
-    .A(data_output[3]),
-    .Y(_08_)
-  );
-  NOT _46_ (
-    .A(data_output[4]),
-    .Y(_09_)
-  );
-  NOT _47_ (
-    .A(data_output[7]),
-    .Y(_10_)
-  );
-  NAND _48_ (
-    .A(_04_),
-    .B(BC_contador[2]),
-    .Y(_11_)
-  );
-  NOR _49_ (
-    .A(data_output[1]),
-    .B(_08_),
-    .Y(_12_)
-  );
-  NAND _50_ (
-    .A(_07_),
-    .B(data_output[3]),
-    .Y(_13_)
-  );
-  NOR _51_ (
-    .A(data_output[6]),
-    .B(_09_),
-    .Y(_14_)
-  );
-  NAND _52_ (
-    .A(_02_),
-    .B(data_output[4]),
-    .Y(_15_)
-  );
-  NOR _53_ (
-    .A(_13_),
-    .B(_15_),
-    .Y(_16_)
-  );
-  NAND _54_ (
-    .A(_12_),
-    .B(_14_),
-    .Y(_17_)
-  );
-  NOR _55_ (
-    .A(data_output[0]),
-    .B(_10_),
-    .Y(_18_)
-  );
-  NAND _56_ (
-    .A(_06_),
-    .B(data_output[7]),
-    .Y(_19_)
-  );
-  NAND _57_ (
-    .A(data_output[2]),
-    .B(data_output[5]),
-    .Y(_20_)
-  );
-  NOT _58_ (
-    .A(_20_),
-    .Y(_21_)
-  );
-  NOR _59_ (
-    .A(_19_),
-    .B(_20_),
-    .Y(_22_)
-  );
-  NAND _60_ (
-    .A(_18_),
-    .B(_21_),
-    .Y(_23_)
-  );
-  NOR _61_ (
-    .A(_17_),
-    .B(_23_),
-    .Y(_24_)
-  );
-  NAND _62_ (
-    .A(_16_),
-    .B(_22_),
-    .Y(_25_)
-  );
-  NAND _63_ (
-    .A(_11_),
-    .B(_24_),
-    .Y(_26_)
-  );
-  NAND _64_ (
-    .A(_03_),
-    .B(_26_),
-    .Y(_27_)
-  );
-  NOR _65_ (
-    .A(_03_),
-    .B(_25_),
-    .Y(_28_)
-  );
-  NAND _66_ (
-    .A(BC_contador[0]),
-    .B(_24_),
-    .Y(_29_)
-  );
-  NAND _67_ (
-    .A(_27_),
-    .B(_29_),
-    .Y(_30_)
-  );
-  NOT _68_ (
-    .A(_30_),
-    .Y(_01_[0])
-  );
-  NAND _69_ (
-    .A(_04_),
-    .B(_29_),
-    .Y(_31_)
-  );
-  NOR _70_ (
-    .A(_04_),
-    .B(_29_),
-    .Y(_32_)
-  );
-  NAND _71_ (
-    .A(BC_contador[1]),
-    .B(_28_),
-    .Y(_33_)
-  );
-  NAND _72_ (
-    .A(_31_),
-    .B(_33_),
-    .Y(_34_)
-  );
-  NOT _73_ (
-    .A(_34_),
-    .Y(_01_[1])
-  );
-  NOR _74_ (
-    .A(_05_),
-    .B(_32_),
-    .Y(_35_)
-  );
-  NOR _75_ (
-    .A(BC_contador[2]),
-    .B(_33_),
-    .Y(_36_)
-  );
-  NOR _76_ (
-    .A(_35_),
-    .B(_36_),
-    .Y(_37_)
-  );
-  NOT _77_ (
-    .A(_37_),
-    .Y(_01_[2])
-  );
-  NAND _78_ (
-    .A(_30_),
-    .B(_34_),
-    .Y(_38_)
-  );
-  NOR _79_ (
-    .A(_37_),
-    .B(_38_),
-    .Y(_00_)
-  );
-  (* src = "estructural.v:43" *)
-  DFF _80_ (
-    .C(clk_4f),
-    .D(_01_[0]),
-    .Q(BC_contador[0])
-  );
-  (* src = "estructural.v:43" *)
-  DFF _81_ (
-    .C(clk_4f),
-    .D(_01_[1]),
-    .Q(BC_contador[1])
-  );
-  (* src = "estructural.v:43" *)
-  DFF _82_ (
-    .C(clk_4f),
-    .D(_01_[2]),
-    .Q(BC_contador[2])
-  );
-  (* src = "estructural.v:43" *)
-  DFF _83_ (
-    .C(clk_4f),
-    .D(_00_),
-    .Q(active_output)
-  );
-  (* src = "estructural.v:43" *)
-  DFF _84_ (
+  (* src = "estructural.v:47" *)
+  DFF _0_ (
     .C(clk_4f),
     .D(bus_0[7]),
     .Q(data_output[0])
   );
-  (* src = "estructural.v:43" *)
-  DFF _85_ (
+  (* src = "estructural.v:47" *)
+  DFF _1_ (
     .C(clk_4f),
     .D(bus_0[6]),
     .Q(data_output[1])
   );
-  (* src = "estructural.v:43" *)
-  DFF _86_ (
+  (* src = "estructural.v:47" *)
+  DFF _2_ (
     .C(clk_4f),
     .D(bus_0[5]),
     .Q(data_output[2])
   );
-  (* src = "estructural.v:43" *)
-  DFF _87_ (
+  (* src = "estructural.v:47" *)
+  DFF _3_ (
     .C(clk_4f),
     .D(bus_0[4]),
     .Q(data_output[3])
   );
-  (* src = "estructural.v:43" *)
-  DFF _88_ (
+  (* src = "estructural.v:47" *)
+  DFF _4_ (
     .C(clk_4f),
     .D(bus_0[3]),
     .Q(data_output[4])
   );
-  (* src = "estructural.v:43" *)
-  DFF _89_ (
+  (* src = "estructural.v:47" *)
+  DFF _5_ (
     .C(clk_4f),
     .D(bus_0[2]),
     .Q(data_output[5])
   );
-  (* src = "estructural.v:43" *)
-  DFF _90_ (
+  (* src = "estructural.v:47" *)
+  DFF _6_ (
     .C(clk_4f),
     .D(bus_0[1]),
     .Q(data_output[6])
   );
-  (* src = "estructural.v:43" *)
-  DFF _91_ (
+  (* src = "estructural.v:47" *)
+  DFF _7_ (
     .C(clk_4f),
     .D(bus_0[0]),
     .Q(data_output[7])
   );
-  (* src = "estructural.v:13" *)
-  DFF _92_ (
+  (* src = "estructural.v:17" *)
+  DFF _8_ (
     .C(clk_32f),
     .D(data_input),
     .Q(bus_0[0])
   );
+  assign BC_contador = 3'h0;
+  assign active_output = 1'h0;
   assign contador = 3'h0;
 endmodule
